@@ -136,10 +136,10 @@ public class WalksyCrystalOptimizerMod implements ClientModInitializer {
     private static Vec3d lookVec() {
         float f = (float) Math.PI / 180;
         float pi = (float) Math.PI;
-        float f1 = MathHelper.cos(-mc.player.getYaw() * f - pi);
-        float f2 = MathHelper.sin(-mc.player.getYaw() * f - pi);
-        float f3 = -MathHelper.cos(-mc.player.getPitch() * f);
-        float f4 = MathHelper.sin(-mc.player.getPitch() * f);
+        float f1 = (float) Math.cos(-mc.player.getYaw() * f - pi);
+        float f2 = (float) Math.sin(-mc.player.getYaw() * f - pi);
+        float f3 = -(float) Math.cos(-mc.player.getPitch() * f);
+        float f4 = (float) Math.sin(-mc.player.getPitch() * f);
         return new Vec3d(f2 * f3, f4, f1 * f3).normalize();
     }
 
