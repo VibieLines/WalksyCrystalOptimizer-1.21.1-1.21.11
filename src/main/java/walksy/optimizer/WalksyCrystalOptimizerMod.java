@@ -26,7 +26,7 @@ import walksy.optimizer.command.EnableOptimizerCommand;
 import java.util.List;
 import java.util.Random;
 
-
+// idk how much longer ill update this
 public class WalksyCrystalOptimizerMod implements ClientModInitializer {
     public static Minecraft mc;
     public static final Random random = new Random();
